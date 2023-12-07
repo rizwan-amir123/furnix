@@ -7,8 +7,8 @@ export async function GET(req) {
   try {
     console.log(query);
     const client = await pool.connect();
-    const result = await client.query("SELECT * FROM furnixschema.products WHERE category = $1", [query]);
-    //const result = await client.query("SELECT * FROM furnixschema.products WHERE email = $1 AND password = $2", [email, password]);
+    const result = await client.query("SELECT * FROM products WHERE category = $1", [query]);
+    //const result = await client.query("SELECT * FROM products WHERE email = $1 AND password = $2", [email, password]);
     const products = result.rows;
     client.release();
     return Response.json(products);
