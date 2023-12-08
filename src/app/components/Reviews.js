@@ -13,7 +13,7 @@ export default function Reviews({src}) {
                         </svg>
                         <blockquote>
                             <p className="text-3xl font-md px-10 text-gray-900 dark:text-white">
-                            "It has helped me be a little <br></br>more organized, and it is <br></br>quite beautiful to stare at."</p>
+                            It has helped me be a little <br></br>more organized, and it is <br></br>quite beautiful to stare at.</p>
                         </blockquote>
                         <p className="mt-20 pt-20"> AD Cleverest Awards</p>
                     </figure>
@@ -28,7 +28,7 @@ export default function Reviews({src}) {
                         </svg>
                         <blockquote>
                             <p className="text-3xl font-md px-10 text-white dark:text-white">
-                            "A convention-breaking design, that <br></br>offers great nap inducing softness."</p>
+                            A convention-breaking design, that <br></br>offers great nap inducing softness.</p>
                         </blockquote>
                         <p className="mt-20 pt-20 text-white"> GQ Home Awards</p>
                     </figure>

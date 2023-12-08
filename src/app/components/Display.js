@@ -136,8 +136,8 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
                     <label htmlFor="color" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Color</label>
                     <select defaultValue={pro.color[0]} value={selectedColorOption} onChange={handleColorChange} id="color" className="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     
-                    {pro.color.map((color) => (
-                        <option value={color}> {color.toUpperCase()}</option>
+                    {pro.color.map((color, index) => (
+                        <option key={index} value={color}> {color.toUpperCase()}</option>
                     ))}
                     
                     </select>
@@ -227,8 +227,8 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
     <div className="flex px-5"> 
         <p className="text-4xl py-10 pl-10 pr-5 text-gray-800">About this piece</p> 
     </div>
-    {product.map((pro) => (
-    <div className="px-5">
+    {product.map((pro), index => (
+    <div key={index} className="px-5">
     <p className="text-justify text-xl pb-5 pt-5 px-10 text-gray-800">{pro.description}
     </p> 
     </div>
