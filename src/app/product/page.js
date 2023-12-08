@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
     <Header src={LogoImg} src1={AvatarImg} cartItems={cartItems}/>
-    <Display src={[Img1, Img2, Img3]} cartItems={cartItems} removeFromCart={removeFromCart}/>
+    {/*<Display src={[Img1, Img2, Img3]} cartItems={cartItems} removeFromCart={removeFromCart}/>*/}
     <Recommender text={"Recommended for You"} src={[Img1, Img2, Img3, Img1, Img2]} cartItems={cartItems}/>
     <Subscribe />
     <Footer src={[LogoImg]}/>
