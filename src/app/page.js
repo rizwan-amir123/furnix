@@ -30,7 +30,7 @@ export default function Home() {
       {/*<Mheader src={LogoImg} src1={AvatarImg} cartItems={cartItems}  
       addToCart={addToCart} addMultipleToCart={addMultipleToCart}/>*/}
       <Header src={LogoImg} src1={AvatarImg} cartItems={cartItems} addToCart={addToCart} addMultipleToCart={addMultipleToCart}/>
-      <Carousel src={[C1Img, C2Img, C3Img, C4Img, C5Img, RugImg]}/>
+      {/*<Carousel src={[C1Img, C2Img, C3Img, C4Img, C5Img, RugImg]}/>*/}
       <Hero src={[C1Img, C2Img, C3Img, C4Img, C5Img, RugImg]} />
       <Features />
       <Collection src={[IndoorImg, OutdoorImg, ClassicImg, ModernaImg]} />
