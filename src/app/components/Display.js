@@ -24,7 +24,8 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
     
     
     useEffect(() => {
-        fetch(`/api/products/${params.id}`)
+        //fetch(`/api/products/${params.id}`)
+        fetch(`/api/products/${A0009}`)
         .then((response) => response.json())
         .then((data) => {
           setProduct(data);
