@@ -10,7 +10,7 @@ export async function GET(req) {
     console.log(password);
     //const password = params.id;
     const client = await pool.connect();
-    const result = await client.query("SELECT * FROM furnixschema.users WHERE email = $1 AND password = $2", [email, password]);
+    const result = await client.query("SELECT * FROM users WHERE email = $1 AND password = $2", [email, password]);
     //const result = await client.query("SELECT * FROM furnixschema.products WHERE email = $1 AND password = $2", [email, password]);
     const count = result.rowCount;
     client.release();

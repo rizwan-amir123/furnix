@@ -2,7 +2,7 @@ import pool from '../../lib/db';
 
 export async function GET(Request) {
   const client = await pool.connect();
-  const result = await client.query("SELECT * FROM furnixschema.users WHERE email = 'b@gmail.com'");
+  const result = await client.query("SELECT * FROM users WHERE email = 'b@gmail.com'");
   const user = result.rows;
   const cart = user[0].cart;
   client.release();
