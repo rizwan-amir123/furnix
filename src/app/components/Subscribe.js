@@ -11,16 +11,16 @@ export default function Subscribe({src}) {
       <div className="flex gap-x-4">
         <label htmlFor="email-address" className="sr-only">Email address</label>
         <input id="email-address" name="email" type="email" autoComplete="email" 
-        required="" className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 
-        text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset 
-        focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email"/>
+        required="" className="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 
+        text-white shadow-sm ring-1 ring-inset ring-white focus:ring-2 focus:ring-inset 
+        focus:ring-gray-200 sm:text-sm sm:leading-6" placeholder="Enter your email"/>
         <button type="submit" className="flex rounded-md bg-gray-600 px-3.5 py-2.5 text-sm 
         font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline 
-        focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+        focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-200">
         Subscribe</button>
       </div>
       <p className="mt-4 text-sm leading-6 text-gray-800">We care about your data. Read our <a
-          href="https://www.swellai.com/privacy" className="font-semibold text-white">privacy&nbsp;policy</a>.</p>
+          href="/" className="font-semibold text-white hover:underline">privacy policy</a>.</p>
     </form>
   </div>
 </div>

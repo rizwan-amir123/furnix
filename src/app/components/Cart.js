@@ -73,10 +73,10 @@ export default function Cart({src, cartItems, addToCart, removeFromCart, clearCa
                     <div>
                     <p className="font-semibold text-lg px-3 text-black">{item.title}
                     </p>
-                    <p className="text-lg px-3 text-black">{item.series} Series
+                    <p className="text-md px-3 text-gray-700">{item.series} Series
                     </p>
                 
-                    <p className="text-md px-3 text-black">Color: {item.selectedcolor.toUpperCase()}
+                    <p className="text-md px-3 text-black py-2">Color: {item.selectedcolor.toUpperCase()}
                     </p>
             
                     </div>
@@ -105,12 +105,12 @@ export default function Cart({src, cartItems, addToCart, removeFromCart, clearCa
                     <div className="grid grid-cols-2 gap-3 pl-10">
                         
                         
-                        <p className=" text-md  pr-2 text-black">Price</p>
+                        <p className=" text-md  pr-2 text-gray-900">Price</p>
                         <p className="text-md pr-2 text-black">${item.price * item.orderquantity}</p>
-                        <p className=" text-md  pr-2 text-black">Shipping </p>
-                        <p className=" text-md  pr-2 text-black">$10</p>
-                        <p className="text-lg  pr-2 text-black">Total </p>
-                        <p className="text-lg pr-2 font-semibold text-black">${shippingCost + item.price * item.orderquantity}</p>
+                        <p className=" text-md  pr-2 text-gray-900">Shipping </p>
+                        <p className=" text-md  pr-2 text-gray-900">$10</p>
+                        <p className="text-lg  pr-2 text-gray-900">Total </p>
+                        <p className="text-lg pr-2 font-semibold text-gray-900">${shippingCost + item.price * item.orderquantity}</p>
                     </div>
                 </div>
             </div>
@@ -120,25 +120,26 @@ export default function Cart({src, cartItems, addToCart, removeFromCart, clearCa
             : <p className="text-2xl pt-10 text-gray-800 pl-10">Cart is Empty</p>}
             <div>
                 <div className="px-5 py-3 mt-4 mb-4 w-auto mr-10 flex flex-col bg-stone-300 rounded">
-                        <p className="font-bold text-2xl pt-4 pb-3 px-4 text-gray-800">Order Summary</p>
+                        <p className="font-bold text-2xl pt-4 pb-3 px-4 text-gray-800 border-b-2
+                        border-gray-400">Order Summary</p>
                     
-                        <div className="flex text-gray-900 justify-between px-4 py-3">
+                        <div className="flex text-gray-700 justify-between px-4 pb-1 pt-3">
                             <p className="font-semibold">Subtotal</p>
                             <p> ${totalCost}</p>
                         </div>
-                        <div className="flex text-gray-900 justify-between px-4 py-3">
+                        <div className="flex text-gray-700 justify-between px-4 ">
                             <p className="font-semibold">Shipping</p>
                             <p> ${cartItems.length * 10}</p>
                         </div>
-                        <div className="flex text-gray-900 justify-between px-4 py-3">
+                        <div className="flex text-gray-900 justify-between px-4 pt-3 pb-1">
                             <p className="font-semibold">Total</p>
                             <p> ${cartItems.length * 10 + totalCost}</p>
                         </div>
-                        <div className="mt-2 p-3 flex justify-center">
-                        <Link href="/checkout" className="w-full text-center px-4 py-3 font-semibold bg-amber-500 hover:bg-amber-600">Checkout</Link>
+                        <div className="mt-2 flex justify-center">
+                        <Link href="/checkout" className="w-full text-center px-4 py-2 font-semibold bg-amber-500 hover:bg-amber-600">Checkout</Link>
                         </div>
                         <div className="flex justify-center">
-                        <Link href="/" className="text-gray-900 pt-3 pb-3  hover:underline">Continue Shopping</Link>
+                        <Link href="/" className="text-gray-900 py-2 text-sm hover:underline">Continue Shopping</Link>
                         </div>
                     
                 </div>

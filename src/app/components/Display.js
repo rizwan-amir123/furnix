@@ -126,16 +126,16 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
                     <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                     </svg>
-                    <svg class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <svg class="w-4 h-4 text-gray-400 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                     </svg>
-                    <span class="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
-                    <a href="#" class="text-sm font-medium text-gray-900 hover:text-bg-800 dark:text-white">73 reviews</a>
+                    <span class="w-1 h-1 mx-1.5 bg-gray-400 rounded-full"></span>
+                    <a href="#" class="text-sm font-medium text-gray-800 ">73 reviews</a>
                 </div>
 
                 <div className="pt-8 mb-0">
-                    <label htmlFor="color" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Color</label>
-                    <select defaultValue={pro.color[0]} value={selectedColorOption} onChange={handleColorChange} id="color" className="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <label htmlFor="color" className="block mb-2 text-sm font-medium text-gray-900 ">Color</label>
+                    <select defaultValue={pro.color[0]} value={selectedColorOption} onChange={handleColorChange} id="color" className="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
                     
                     {pro.color.map((color, index) => (
                         <option key={index} value={color}> {color.toUpperCase()}</option>
@@ -143,8 +143,10 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
                     
                     </select>
 
-                    <label htmlFor="quantity" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Quantity</label>
-                    <select defaultValue={1} value={selectedQuantityOption} onChange={handleQuantityChange} id="quantity" className="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <label htmlFor="quantity" className="block mb-2 text-sm font-medium text-gray-900">Quantity</label>
+                    <select defaultValue={1} value={selectedQuantityOption} onChange={handleQuantityChange} id="quantity" 
+                    className="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg 
+                    focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>
@@ -166,24 +168,24 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
         
 
     <div className="flex px-5"> 
-        <p className="text-4xl py-10 pl-10 pr-5 text-gray-800">Specifications</p> 
+        <p className="text-3xl pt-10 pb-5 pl-10 pr-5 text-gray-800">Specifications</p> 
     </div>
 
     <div className="px-5 flex justify-center items-center pl-10 justify-between">  
     <div className="relative pl-5 pt-5 overflow-x-auto sm:rounded-lg">
-    <table className="w-full text-md text-left text-gray-500 dark:text-gray-400">
+    <table className="w-full text-md text-left text-gray-500">
         
         <tbody>
-            <tr className="bg-transparent border-b dark:bg-gray-900 dark:border-gray-700">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <tr className="bg-transparent border-b border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                     General Dimensions
                 </th>
                 <td className="px-6 py-4">
                 84” L x 32.5” W x 33.5” H
                 </td>
             </tr>
-            <tr className="border-b bg-transparent dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <tr className="border-b bg-transparent border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                     Seat Height
                 </th>
                 <td className="px-6 py-4">
@@ -191,8 +193,8 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
                 </td>
                 
             </tr>
-            <tr className="bg-transparent border-b dark:bg-gray-900 dark:border-gray-700">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <tr className="bg-transparent border-b border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                     Arm Height
                 </th>
                 <td className="px-6 py-4">
@@ -200,8 +202,8 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
                 </td>
                 
             </tr>
-            <tr className="border-b bg-transparent dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <tr className="border-b bg-transparent border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                     Seat Depth
                 </th>
                 <td className="px-6 py-4">
@@ -210,7 +212,7 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
                 
             </tr>
             <tr>
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                     Leg Height
                 </th>
                 <td className="px-6 py-4">
@@ -224,19 +226,19 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
     <img src={src[1].src}  className="justify-center h-auto rounded-lg w-auto py-5" alt="seating"/>
     </div>
     </div>
-
+                        
     <div className="flex px-5"> 
-        <p className="text-4xl py-10 pl-10 pr-5 text-gray-800">About this piece</p> 
+        <p className="text-3xl pt-10 pb-5 pl-10 pr-5 text-gray-800">About this piece</p> 
     </div>
-    {product.map((pro), index => (
+    {product.map((pro, index) => (
     <div key={index} className="px-5">
-    <p className="text-justify text-xl pb-5 pt-5 px-10 text-gray-800">{pro.description}
+    <p className="text-justify text-lg pb-5 pt-0 px-10 text-gray-800">{pro.description}
     </p> 
     </div>
     ))}
 
     <div className="flex px-5"> 
-        <p className="text-4xl py-10 pl-10 pr-5 text-gray-800">Reviews</p> 
+        <p className="text-3xl pt-10 pb-8 pl-10 pr-5 text-gray-800">Reviews</p> 
     </div>
     <div className="px-10">
         <article className="px-5">
@@ -259,10 +261,10 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
                 <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                 </svg>
-                <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <svg class="w-4 h-4 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                 </svg>
-                <h3 class="ms-2 text-sm font-semibold text-gray-900 dark:text-white">Thinking to buy another one!</h3>
+                <h3 class="ms-2 pl-3 text-sm font-semibold text-gray-900">Thinking to buy another one!</h3>
             </div>
             <footer class="mb-5 text-sm text-gray-500 text-gray-400"><time dateTime="2017-03-03 19:00">October 3, 2023</time></footer>
             <p class="mb-2 text-gray-500 text-gray-800">This is my third purchase and I gotta say I got value for my money!</p>
@@ -288,10 +290,10 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
                 <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                 </svg>
-                <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <svg class="w-4 h-4 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                 </svg>
-                <h3 class="ms-2 text-sm font-semibold text-gray-900 dark:text-white">Superb Quality</h3>
+                <h3 class="pl-3 ms-2 text-sm font-semibold text-gray-900">Superb Quality</h3>
             </div>
             <footer class="mb-5 text-sm text-gray-500 text-gray-400"><time datetime="2017-03-03 19:00">June 14, 2023</time></footer>
             <p class="mb-2 text-gray-500 text-gray-800">Super Impressed! Sure gonna buy again!</p>

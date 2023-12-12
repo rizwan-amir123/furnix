@@ -14,7 +14,7 @@ export default function Home({params}) {
     <>
     <Header src={LogoImg} src1={AvatarImg} cartItems={cartItems}/>
     <Search params={params}/>
-    <Recommender text={"Check Our Best Selling Items"} cartItems={cartItems}/>
+    {/*<Recommender text={"Check Our Best Selling Items"} cartItems={cartItems}/>*/}
     <Subscribe />
     <Footer src={[LogoImg]}/>
     </>

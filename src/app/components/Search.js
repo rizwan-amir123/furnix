@@ -17,7 +17,7 @@ export default function Search({params}) {
 
     
     return (
-        <section className="bg-stone-200 dark:bg-stone-200 pb-20">
+        <section className="bg-stone-200 dark:bg-stone-200 pb-20 px-5">
             <p className="pl-8 pt-10 text-4xl text-gray-700">Search Results for {id}</p>
             
             <div className="grid grid-cols-3 p-5">

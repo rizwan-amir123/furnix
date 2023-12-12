@@ -203,6 +203,7 @@ export default function Login({src, cartItems, addMultipleToCart, addToCart}) {
             <div className="flex items-stretch place-items-center ">
                 <div className="items-center  justify-center flex w-2/5 bg-gray-900 h-screen">
                     <div className="flex flex-col p-10 px-5 space-y-10">
+                        
                         <div className="flex pb-10 justify-center border-b-2 border-stone-200 items-center">
                             <Link href="/">
                                 <img src={src.src} className="h-28 " alt="Logo" />

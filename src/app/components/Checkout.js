@@ -79,7 +79,7 @@ export default function Cart({src}) {
     };
 
     return (
-    <section className="bg-stone-200 text-gray-900 dark:bg-stone-200 p-20">
+    <section className="bg-stone-200 text-gray-900 p-20">
     <div className="flex">
         <div className="w-2/3">
             <form  >
@@ -87,11 +87,10 @@ export default function Cart({src}) {
             <div className="mb-5">
             <input type="text" required={true} name="email" onChange={handleInputChange} value={formData.email} id="email" placeholder="Email" className="bg-gray-50 border border-gray-300 
             text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
-            block w-2/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-            dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+            block w-2/5 p-2.5"/>
             <p className="text-2xl mt-6 pb-4 font-bold">Delivery</p>
-            <label htmlFor="countries" className="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Select your country</label>
-            <select name="country" value={formData.country} onChange={handleInputChange} id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-2/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <label htmlFor="countries" className="block mb-2 text-lg font-medium text-gray-900 ">Select your country</label>
+            <select name="country" value={formData.country} onChange={handleInputChange} id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-2/5 p-2.5">
             <option value="United States">United States</option>
             <option value="Pakistan">Pakistan</option>
             <option value="United Kingdom">United Kingdom</option>
@@ -101,41 +100,34 @@ export default function Cart({src}) {
             <div className="flex">
             <input type="text" required={true} name="firstname" onChange={handleInputChange} value={formData.firstname} placeholder="First Name" className="mr-3 mt-5 bg-gray-50 border border-gray-300 
             text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
-            block w-2/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-            dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+            block w-2/5 p-2.5"/>
             <input type="text" required={true} name="lastname" onChange={handleInputChange} value={formData.lastname} placeholder="Last Name" className="mt-5 bg-gray-50 border border-gray-300 
             text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
-            block w-2/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-            dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+            block w-2/5 p-2.5"/>
             </div>
             
             <input type="text" required={true} name="address" onChange={handleInputChange} value={formData.address} placeholder="Billing Address" className="h-1/2 mt-5 bg-gray-50 border border-gray-300 
             text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
-            block w-2/5 p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-            dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+            block w-2/5 p-4"/>
 
            <div className="flex">
             <input type="text" required={true} name="city" onChange={handleInputChange} value={formData.city} placeholder="City" className="mr-3 mt-5 bg-gray-50 border border-gray-300 
             text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
-            block w-2/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-            dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+            block w-2/5 p-2.5"/>
             <input type="text" required={true} name="postalcode" onChange={handleInputChange} value={formData.postalcode} placeholder="Postal Code" className="mt-5 bg-gray-50 border border-gray-300 
             text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
-            block w-2/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-            dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+            block w-2/5 p-2.5"/>
             </div>
             
             <input type="text" required={true} name="phone" onChange={handleInputChange} value={formData.phone} placeholder="Phone" className="mt-5 bg-gray-50 border border-gray-300 
             text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
-            block w-2/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-            dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+            block w-2/5 p-2.5"/>
 
             <div className="flex items-center mt-3 mb-4">
                 <input defaultChecked id="saveinfo" type="checkbox" name="saveinfo"  className="w-4 h-4
                 text-amber-500 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 
-                dark:focus:ring-amber-500 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 
-                focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                <label htmlFor="checkbox-1" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                " />
+                <label htmlFor="checkbox-1" className="ml-2 text-sm font-medium text-gray-900">
                 Save this information for next time</label>
             </div>
 
@@ -143,23 +135,21 @@ export default function Cart({src}) {
             <div className="flex items-center mt-3 mb-3">
                 <input value={sameAddressCheck} onChange={handleCheckboxChange} id="sameaddress" name="sameaddress" type="checkbox" className="w-4 h-4
                 text-amber-500 bg-gray-100 border-gray-300 rounded" />
-                <label htmlFor="checkbox-1" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                <label htmlFor="checkbox-1" className="ml-2 text-sm font-medium text-gray-900">
                 Same as Billing Address</label>
             </div>
             <input type="text" required={true} onChange={handleInputChange} disabled={!sameAddressCheck} value={formData.shipaddress} 
             placeholder="Shipping Address" name="shipaddress" className="h-1/2 mt-3 bg-gray-50 border border-gray-300 
             text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
-            block w-2/5 p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-            dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+            block w-2/5 p-4"/>
 
             <p className="text-2xl mt-6 pb-5 font-bold">Payment</p>
             <div className="flex items-center mb-4">
                 <input id="payment-option-1" onChange={handleInputChange} value="Cash on Delivery" 
                 type="radio" name="payment"
                 className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 
-                dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 
-                dark:border-gray-600" defaultChecked/>
-                <label htmlFor="payment-option-1" className="block ml-2 text-md  text-gray-900 dark:text-gray-300">
+                " defaultChecked/>
+                <label htmlFor="payment-option-1" className="block ml-2 text-md  text-gray-900">
                 Cash On Delivery
                 </label>
             </div>
@@ -168,9 +158,8 @@ export default function Cart({src}) {
                 <input id="payment-option-2" type="radio" name="payment" 
                 value="Credit/Debit Card"
                 onChange={handleInputChange} className="w-4 h-4 border-gray-300 focus:ring-2 
-                focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 
-                dark:bg-gray-700 dark:border-gray-600"/>
-                <label htmlFor="payment-option-2" className="block ml-2 text-md text-gray-900 dark:text-gray-300">
+                focus:ring-blue-300"/>
+                <label htmlFor="payment-option-2" className="block ml-2 text-md text-gray-900">
                 Credit/Debit Card
                 </label>
             </div>
@@ -203,8 +192,7 @@ export default function Cart({src}) {
             <div className="flex justify-between items-center">
                 <input type="text" placeholder="Discount Code" className="h-1/3 mt-3 bg-gray-50 border border-gray-300 
                 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
-                block w-4/6 p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                block w-4/6 p-4"/>
                 <button className="mt-1 rounded-lg hover:bg-amber-600 text-white px-4 py-2 font-semibold bg-amber-500"
                 ><a className="">Apply</a>
             </button>
