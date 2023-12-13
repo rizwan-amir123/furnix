@@ -15,7 +15,7 @@ export async function POST(req) {
   console.log(shipaddress);
   console.log(country);
   console.log(payment);
-  const result = await pool.query('INSERT INTO furnixschema.info (email, firstname, lastname, address, city, postalcode, phone, shipaddress, country, payment) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *', [email, firstname, lastname, address, city, postalcode, phone, shipaddress, country,
+  const result = await pool.query('INSERT INTO info (email, firstname, lastname, address, city, postalcode, phone, shipaddress, country, payment) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *', [email, firstname, lastname, address, city, postalcode, phone, shipaddress, country,
     payment]);
   const insertedInfo = result.rows[0];
   console.log(insertedInfo);
