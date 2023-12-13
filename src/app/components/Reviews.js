@@ -1,13 +1,13 @@
 export default function Reviews({src}) {
     return (
         <section className="bg-gray-900 text-gray-800 pt-20">
-            <h2 class="flex flex-row flex-nowrap items-center mb-10 ">
-                <span class="flex-grow block border-t border-neutral-600"></span>
-                <span class="flex-none block mx-4 px-4 py-4 rounded leading-none 
+            <h2 className="flex flex-row flex-nowrap items-center mb-10 ">
+                <span className="flex-grow block border-t border-neutral-600"></span>
+                <span className="flex-none block mx-4 px-4 py-4 rounded leading-none 
                  bg-neutral-600 text-white text-2xl font-semibold font-sans">
                     AWARDS & ACCOLADES
                 </span>
-                <span class="flex-grow block border-t border-neutral-600"></span>
+                <span className="flex-grow block border-t border-neutral-600"></span>
             </h2>
             <section className="bg-amber-500 pt-10 pb-10">
                 <p align="center" className="text-4xl font-semibold "> </p>

@@ -15,9 +15,12 @@ export default function RootLayout({ children }) {
     
     <html lang="en">
       <head>
-      
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+
       </head>
       <body className={inter.className}>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
       <ClientProvider >
       <CartProvider>
       

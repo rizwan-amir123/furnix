@@ -3,13 +3,13 @@ export default function Hero({src}) {
         <section className="bg-stone-200 text-gray-800 py-20 pt-20 pb-5">
             {/*<p align="center" className="text-4xl font-semibold  "> LATEST DESIGNS</p>*/}
 
-            <h2 class="flex flex-row flex-nowrap items-center ">
-                <span class="flex-grow block border-t border-neutral-600"></span>
-                <span class="flex-none block mx-4 px-4 py-4 rounded leading-none 
+            <h2 className="flex flex-row flex-nowrap items-center ">
+                <span className="flex-grow block border-t border-neutral-600"></span>
+                <span className="flex-none block mx-4 px-4 py-4 rounded leading-none 
                  bg-neutral-600 text-white text-2xl font-semibold font-sans">
                     LATEST DESIGNS
                 </span>
-                <span class="flex-grow block border-t border-neutral-600"></span>
+                <span className="flex-grow block border-t border-neutral-600"></span>
             </h2>
             <div className="grid-cols-3 grid mx-10 my-10 pt-5 justify-between">
                 <div className="p-3 w-full group">
