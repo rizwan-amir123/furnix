@@ -31,7 +31,7 @@ export async function GET(req) {
     else {
       //return Response.json({"success":false});
       return new Response(JSON.stringify({"success": false }), {
-        status: 400,
+        status: 200,
         headers: {
           //'Access-Control-Allow-Credentials': "true",
           'Access-Control-Allow-Origin': '*',
@@ -45,6 +45,16 @@ export async function GET(req) {
     //client.release();
     //return Response.json(products);
   } catch {
-    return Response.json({ error: 'Internal server error' });
+    //return Response.json({ error: 'Internal server error' });
+    return new Response(JSON.stringify({ error: 'Internal server error' }), {
+      status: 400,
+      headers: {
+        //'Access-Control-Allow-Credentials': "true",
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        "Content-Type": "application/json"
+      },
+    });
   }
 }
