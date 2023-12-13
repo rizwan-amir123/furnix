@@ -15,10 +15,31 @@ export async function GET(req) {
     const count = result.rowCount;
     client.release();
     if (count >=1 ) {
-      return Response.json({"success":true});
+      //return Response.json({"success":true});
+      return new Response(JSON.stringify({"success" :true }), {
+        status: 200,
+        headers: {
+          //'Access-Control-Allow-Credentials': "true",
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type',
+          "Content-Type": "application/json"
+        },
+      });
+      
     }
     else {
-      return Response.json({"success":false});
+      //return Response.json({"success":false});
+      return new Response(JSON.stringify({"success": false }), {
+        status: 400,
+        headers: {
+          //'Access-Control-Allow-Credentials': "true",
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type',
+          "Content-Type": "application/json"
+        },
+      });
     }
     //const products = result.rows;
     //client.release();
