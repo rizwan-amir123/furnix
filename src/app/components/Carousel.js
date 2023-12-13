@@ -7,7 +7,7 @@ export default function Carousel({src}) {
 
 <div id="default-carousel" className="relative w-full" data-carousel="slide">
     {/*<!-- Carousel wrapper -->*/}
-    <div className="relative overflow-hidden h-[450px]">
+    <div className="relative overflow-hidden h-[430px]">
          {/*<!-- Item 1 -->*/}
         <div className="relative hidden duration-700 ease-in-out" data-carousel-item>
             
@@ -18,8 +18,8 @@ export default function Carousel({src}) {
              <p className=" [text-shadow:_5px_5px_3px_rgb(0_0_0_/_70%)] 
              text-white text-8xl pt-4 px-4">Seating <br/>Upto 40% <br/>
             OFF</p>
-            <Link href="/" className="absolute ml-6 bg-amber-500 py-2 px-3 text-md 
-            shadow-lg font-medium hover:bg-amber-600 text-white [text-shadow:_1px_1px_0px_rgb(0_0_0_/_40%)] 
+            <Link href="/" className="absolute ml-6 bg-amber-500 py-2 px-3 
+            hover:bg-amber-600 text-white font-bold 
             hover:text-gray-900">Shop Now</Link>
             </div>
         </div>
@@ -30,8 +30,8 @@ export default function Carousel({src}) {
             <div className="absolute top-1 left-1">
             <p className="text-white [text-shadow:_5px_5px_3px_rgb(0_0_0_/_70%)] text-8xl pt-4 px-4">Moderna Series <br/>Avaialable <br/>
             Now</p>
-            <Link href="/" className="absolute ml-6 bg-amber-500 py-2 px-3 text-md 
-            shadow-lg font-medium hover:bg-amber-600 text-white [text-shadow:_1px_1px_0px_rgb(0_0_0_/_40%)] 
+            <Link href="/" className="absolute ml-6 bg-amber-500 py-2 px-3 
+            hover:bg-amber-600 text-white font-bold 
             hover:text-gray-900">Shop Now</Link>
             </div>
         </div>
@@ -43,8 +43,8 @@ export default function Carousel({src}) {
             <p className="text-white [text-shadow:_5px_5px_3px_rgb(0_0_0_/_70%)] 
              text-8xl px-4 pt-4">Nomad Series <br/>Upto 40% <br/>
             OFF</p>
-            <Link href="/" className="absolute ml-6 bg-amber-500 py-2 px-3 text-md 
-            shadow-lg font-medium hover:bg-amber-600 text-white [text-shadow:_1px_1px_0px_rgb(0_0_0_/_40%)] 
+            <Link href="/" className="absolute ml-6 bg-amber-500 py-2 px-3 
+            hover:bg-amber-600 text-white font-bold 
             hover:text-gray-900">Shop Now</Link>
             </div>
         </div>
@@ -56,8 +56,8 @@ export default function Carousel({src}) {
             <p className="text-white [text-shadow:_5px_5px_3px_rgb(0_0_0_/_70%)] 
             text-8xl pt-4 pb-2 px-4">Union Series <br/>Save Upto <br/>
             $100</p>
-            <Link href="/" className="absolute ml-6 bg-amber-500 py-2 px-3 text-md 
-            shadow-lg font-medium hover:bg-amber-600 text-white [text-shadow:_1px_1px_0px_rgb(0_0_0_/_40%)] 
+            <Link href="/" className="absolute ml-6 bg-amber-500 py-2 px-3 
+            hover:bg-amber-600 text-white font-bold 
             hover:text-gray-900">Shop Now</Link>
             </div>
         </div>
@@ -72,8 +72,8 @@ export default function Carousel({src}) {
                 Available</p>
                 </div>
                 <div className="ml-auto mr-5 mt-3">
-                <Link href="/" className="bg-amber-500 py-3 px-3 text-md 
-                shadow-lg font-medium hover:bg-amber-600 text-white [text-shadow:_1px_1px_0px_rgb(0_0_0_/_40%)] 
+                <Link href="/" className="bg-amber-500 py-3 px-3 
+                hover:bg-amber-600 text-white font-bold 
                 hover:text-gray-900">Shop Now</Link>
                 </div>
             </div>

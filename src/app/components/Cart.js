@@ -131,7 +131,7 @@ export default function Cart({src, cartItems, addToCart, removeFromCart, clearCa
                             <p className="font-semibold">Shipping</p>
                             <p> ${cartItems.length * 10}</p>
                         </div>
-                        <div className="flex text-gray-900 justify-between px-4 pt-3 pb-1">
+                        <div className="flex text-gray-900 justify-between px-4 pt-5 pb-1">
                             <p className="font-semibold">Total</p>
                             <p> ${cartItems.length * 10 + totalCost}</p>
                         </div>

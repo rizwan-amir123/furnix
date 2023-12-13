@@ -18,10 +18,10 @@ import C4Img from '../../public/c4.jpg'
 import C5Img from '../../public/c5.jpg'
 
 import Car1Img from '../../public/carousel1.webp'
-import Car2Img from '../../public/carousel2.webp'
-import Car3Img from '../../public/carousel3.webp'
+import Car2Img from '../../public/carousel8.webp'
+import Car3Img from '../../public/carousel9.webp'
 import Car4Img from '../../public/carousel4.webp'
-import Car5Img from '../../public/carousel5.webp'
+import Car5Img from '../../public/carousel7.webp'
 
 import IndoorImg from '../../public/indoor.jpg'
 import OutdoorImg from '../../public/outdoor.jpg'
