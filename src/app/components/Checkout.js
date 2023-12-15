@@ -32,7 +32,7 @@ export default function Cart({src}) {
         "country": formData.country,
         "payment": formData.payment
         };
-        const request = new Request('http://localhost:3000/api/info',{
+        const request = new Request('/api/info',{
             method: 'POST',
             body: JSON.stringify(submitData),
             headers: {

@@ -36,7 +36,7 @@ export default function Cart({src, cartItems, addToCart, removeFromCart, clearCa
         if (session) {
             const submitData = {"email": session.user.email, "cart": JSON.stringify(cartItems)};
             //const request = new Request();
-            const response = fetch('http://localhost:3000/api/updatecart',{
+            const response = fetch('/api/updatecart',{
                                 method: 'POST',
                                 body: JSON.stringify(submitData),
                                 headers: {

@@ -24,7 +24,7 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
     
     
     useEffect(() => {
-        fetch(`http://localhost:3000/api/products/${params.id}`)
+        fetch(`/api/products/${params.id}`)
         //fetch(`/api/products/${A0009}`)
         .then((response) => response.json())
         .then((data) => {
@@ -38,7 +38,7 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
         if (session) {
             const submitData = {"email": session.user.email, "cart": JSON.stringify(cartItems)};
             //const request = new Request();
-            const response = fetch('http://localhost:3000/api/updatecart',{
+            const response = fetch('/api/updatecart',{
                                 method: 'POST',
                                 body: JSON.stringify(submitData),
                                 headers: {

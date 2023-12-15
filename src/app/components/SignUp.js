@@ -118,7 +118,7 @@ export default function SignUp({src}) {
                         console.log('last name ok');
                             const submitData = {"email":email, "firstname": firstname, 
                             "lastname": lastname, "password":password, "cart":[], "manual":1};
-                            const request = new Request('http://localhost:3000/api/createuser',{
+                            const request = new Request('/api/createuser',{
                               method: 'POST',
                               body: JSON.stringify(submitData),
                               headers: {

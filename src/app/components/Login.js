@@ -178,7 +178,7 @@ export default function Login({src, cartItems, addMultipleToCart, addToCart}) {
                 redirect: true,
                 email: email,
                 password: password,
-                callbackUrl: 'http://localhost:3000/auth/signin'
+                callbackUrl: '/auth/signin'
             });
             }
             else {
