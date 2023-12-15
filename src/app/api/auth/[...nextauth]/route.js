@@ -180,7 +180,7 @@ const handler = NextAuth({
     */
 
     async redirect({ url, baseUrl }) {
-      return 'http://localhost:3000/login';
+      return '/login';
     },
     
   },
