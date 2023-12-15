@@ -8,6 +8,7 @@ export default function SignUp({src}) {
     const [lastname, setLastName] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
+    const [finalSubmit, setFinalSubmit] = useState(false);
     const [errors, setErrors] = useState({
         minValueValidation: false,
         numberValidation: false,
@@ -129,7 +130,7 @@ export default function SignUp({src}) {
                             .then((response) => {
                                 if (response.status === 200) {
                                     console.log("here");
-                                    redirect('/login');
+                                    setFinalSubmit(true);
                                     return response.json();
                                 } else {
                                 throw new Error("Something went wrong on API server!");
@@ -218,7 +219,7 @@ export default function SignUp({src}) {
                         
                     </div>
                 </div>
-
+            {finalSubmit ? <p>Welcome</p> :
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto">
                 <div className="w-full p-8  bg-white border border-gray-200 rounded-lg shadow 
                 sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
@@ -258,7 +259,7 @@ export default function SignUp({src}) {
                         text-center">Sign Up</button>
                     </form>
                 </div>
-            </div>
+            </div>}
         </div>
         </section>
     );
