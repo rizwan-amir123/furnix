@@ -200,8 +200,10 @@ export default function Login({src, cartItems, addMultipleToCart, addToCart}) {
       
     return (
         <section className="bg-stone-200 text-amber-800">
-            <div className="flex items-stretch place-items-center ">
-                <div className="items-center  justify-center flex w-2/5 bg-gray-900 h-screen">
+            <img src="https://drive.google.com/uc?export=view&id=1YhMv3KmG1tdIcONT0LaVjYoBsHBRlNIP" alt="Background Image" 
+            className="absolute inset-0 w-full h-full object-cover blur-sm filter z-0"/>
+            <div className="relative z-10 flex items-stretch place-items-center ">
+                <div className="items-center  justify-center flex w-2/6 bg-gray-900 h-screen">
                     <div className="flex flex-col p-10 px-5 space-y-10">
                         
                         <div className="flex pb-10 justify-center border-b-2 border-stone-200 items-center">
@@ -292,7 +294,7 @@ export default function Login({src, cartItems, addMultipleToCart, addToCart}) {
                     <div className="w-full bg-white border border-gray-200 rounded-lg shadow 
                     sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                         <form className="space-y-4 w-96 h-auto" action="#" >
-                            <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>
+                            <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign In </h5>
                             <div>
                                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                                 <input type="email" name="email" value={email}
@@ -393,9 +395,9 @@ export default function Login({src, cartItems, addMultipleToCart, addToCart}) {
                                 <a href="#" className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
                             </div>
 
-                            <button type="submit" onClick={handleSubmit} className="w-full text-white bg-blue-700 hover:bg-blue-800 
+                            <button type="submit" onClick={handleSubmit} className="w-full text-white bg-gray-900 hover:bg-amber-600 
                             focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 
-                            text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
+                            text-center">Login to your account</button>
                                 <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
                                 Not registered? <a href="/signup" className="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
                                 </div>

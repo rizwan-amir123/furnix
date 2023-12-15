@@ -179,8 +179,10 @@ export default function SignUp({src}) {
       
     return (
         <section className="bg-stone-200 text-amber-800">
-            <div className="flex items-stretch place-items-center">
-                <div className="items-center  justify-center flex w-2/5 bg-gray-900 h-screen">
+            <img src="https://drive.google.com/uc?export=view&id=1YhMv3KmG1tdIcONT0LaVjYoBsHBRlNIP" alt="Background Image" 
+                className="absolute inset-0 w-full h-full object-cover blur-sm filter z-0"/>
+            <div className="relative flex items-stretch place-items-center z-10">
+                <div className="items-center  justify-center flex w-2/6 bg-gray-900 h-screen">
                     <div className="pt-10 pb-10 px-5">
                         <div className="flex pb-10 justify-center border-b-2 border-stone-200 items-center">
                             <a href="/">
@@ -220,8 +222,8 @@ export default function SignUp({src}) {
                     </div>
                 </div>
             {finalSubmit ? (<div className="flex flex-col pl-4 justify-center">
-                <p className="text-8xl ml-2 mb-2">Welcome,</p>
-                <p className="text-2xl ml-3 text-gray-700">Sign up was successful!</p>
+                <p className="text-8xl ml-2 mb-2 text-white">Welcome,</p>
+                <p className="text-2xl ml-3 text-gray-700 text-white">Sign Up was successful!</p>
                 <div className="flex flex-row mt-10">
                 <Link href="/">
                             <div className="shadow-lg ml-2 bg-amber-500 hover:bg-neutral-500  hover:text-gray-900 rounded-lg mt-5 p-5  justify-center flex flex-inline">
@@ -251,6 +253,8 @@ export default function SignUp({src}) {
                 </div>
                 </div>) :
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto">
+                
+    
                 <div className="w-full p-8  bg-white border border-gray-200 rounded-lg shadow 
                 sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                     <form className="space-y-3 w-96 h-auto" action="#" >
@@ -284,7 +288,7 @@ export default function SignUp({src}) {
                         </div>
                         {(!errors.minValueValidation && errors.loginpressed) && <p className="text-sm">Password must have at least 8 characters, including at least one uppercase letter, one lowercase letter, one digit, and one special character.</p>}
 
-                        <button type="submit" onClick={handleSubmit} className="w-full text-semibold text-white bg-blue-700 hover:bg-amber-600 
+                        <button type="submit" onClick={handleSubmit} className="w-full text-semibold text-white bg-gray-900 hover:bg-amber-600 
                         focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 
                         text-center">Sign Up</button>
                     </form>
