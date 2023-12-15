@@ -247,7 +247,7 @@ export default function Login({src, cartItems, addMultipleToCart, addToCart}) {
                 (<div className="flex flex-col p-5 justify-center place-items-start ml-5 mb-20">
                     
                         <div>
-                            <p className="text-8xl">Hello,</p>
+                            <p className="text-8xl tetx-white">Hello,</p>
                             <p className="text-4xl text-gray-900">{session.user.name}</p>
                         </div> 
                         <div className="flex flex-row mb-8 mt-8">
