@@ -1,6 +1,6 @@
 "use client"
 import { useSession, signIn, signOut } from "next-auth/react";
-import { redirect } from 'next/navigation';
+import Link from 'next/link';
 import { useState } from "react";
 export default function SignUp({src}) {
     const [email, setEmail] = useState('');
