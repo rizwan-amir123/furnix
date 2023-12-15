@@ -12,6 +12,7 @@ export const AuthProvider = ({ children }) => {
 
   const signIn = () => {
     // Perform any necessary logic
+    /*
     addMultipleToCart([
         {
           "id": "A0009               ",
@@ -67,6 +68,7 @@ export const AuthProvider = ({ children }) => {
           "selectedcolor": "white"
         }
       ]);
+      */
   };
 
   const signOut = () => {

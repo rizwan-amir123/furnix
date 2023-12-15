@@ -3,7 +3,7 @@
 
 export async function verifyPassword(email, password) {
   try {
-    console.log("insoIIIIIIIe");
+    //console.log("insoIIIIIIIe");
     let user = [];
     console.log("pre email:", email);
 
