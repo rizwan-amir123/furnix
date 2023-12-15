@@ -219,9 +219,9 @@ export default function SignUp({src}) {
                         
                     </div>
                 </div>
-            {finalSubmit ? (<div className="flex items-center justify-center">
-                <p className="text-4xl">Welcome</p>
-                <p className="text-2xl">Sign Up was successful!</p>
+            {finalSubmit ? (<div className="flex flex-col items-center justify-center">
+                <p className="text-8xl">Welcome</p>
+                <p className="text-4xl">Sign Up was successful!</p>
                 <Link href="/">
                             <div className="shadow-lg ml-5 bg-amber-500 hover:bg-neutral-500  hover:text-gray-900 rounded-lg mt-5 p-5  justify-center flex flex-inline">
                                     <div>
