@@ -1,6 +1,6 @@
 "use client"
 import { useSession, signIn, signOut } from "next-auth/react";
-
+import { redirect } from 'next/navigation';
 import { useState } from "react";
 export default function SignUp({src}) {
     const [email, setEmail] = useState('');
@@ -129,7 +129,8 @@ export default function SignUp({src}) {
                             .then((response) => {
                                 if (response.status === 200) {
                                     console.log("here");
-                                return response.json();
+                                    redirect('/login');
+                                    return response.json();
                                 } else {
                                 throw new Error("Something went wrong on API server!");
                                 }
