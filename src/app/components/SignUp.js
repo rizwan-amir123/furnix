@@ -219,34 +219,36 @@ export default function SignUp({src}) {
                         
                     </div>
                 </div>
-            {finalSubmit ? (<div className="flex flex-col items-center justify-center">
+            {finalSubmit ? (<div className="flex flex-col pl-4 justify-center">
                 <p className="text-8xl ml-2 mb-2">Welcome,</p>
-                <p className="text-2xl ml-2">Sign up was successful!</p>
+                <p className="text-2xl ml-3 text-gray-700">Sign up was successful!</p>
+                <div className="flex flex-row mt-10">
                 <Link href="/">
                             <div className="shadow-lg ml-2 bg-amber-500 hover:bg-neutral-500  hover:text-gray-900 rounded-lg mt-5 p-5  justify-center flex flex-inline">
                                     <div>
-                                    <svg className="w-16 h-16 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                    <svg className="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
                                         <path stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z"/>
                                     </svg>
                                     </div>
                                     <div>
-                                        <p className="text-6xl pl-5 text-white">Shop</p>
+                                        <p className="text-2xl pl-1 text-white">Shop</p>
                                     </div>
                             </div>
                 </Link>
                 <Link href="/login">
-                            <div className="shadow-lg ml-2 bg-amber-500 hover:bg-neutral-500  hover:text-gray-900 rounded-lg mt-5 p-5  justify-center flex flex-inline">
+                            <div className="shadow-lg ml-2 bg-amber-500 hover:bg-neutral-500  hover:text-gray-900 rounded-lg mt-5 p-5 justify-center flex flex-inline">
                                     <div>
-                                    <svg className="w-16 h-16 text-gray-800" aria-hidden="true" 
+                                    <svg className="w-8 h-8 text-gray-800" aria-hidden="true" 
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 18">
                                         <path stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-2 3h4a4 4 0 0 1 4 4v2H1v-2a4 4 0 0 1 4-4Z"/>
                                     </svg>
                                     </div>
                                     <div>
-                                        <p className="text-6xl pl-5 text-white">Shop</p>
+                                        <p className="text-2xl pl-1 text-white">Login</p>
                                     </div>
                             </div>
-                            </Link>
+                </Link>
+                </div>
                 </div>) :
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto">
                 <div className="w-full p-8  bg-white border border-gray-200 rounded-lg shadow 
