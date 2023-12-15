@@ -41,7 +41,7 @@ export default function Login({src, cartItems, addMultipleToCart, addToCart}) {
                     let createUser = async () => {
                         const submitData = {"email":session.user.email, "firstname": nameArray[0], 
                             "lastname": nameArray[1], "password":"none", "cart":"[]", "manual":0};
-                        const request = new Request('http://localhost:3000/api/createuser',{
+                        const request = new Request('/api/createuser',{
                               method: 'POST',
                               body: JSON.stringify(submitData),
                               headers: {

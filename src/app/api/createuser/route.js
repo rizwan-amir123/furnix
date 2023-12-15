@@ -7,8 +7,8 @@ export async function POST(req) {
   const result = await pool.query('INSERT INTO users (email, firstname, lastname, password, cart, manual) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *', [email, firstname, lastname, password, cart, manual]);
   const insertedUser = result.rows[0];
   client.release();
-  //return Response.json(insertedUser);
-  return new Response(JSON.stringify(insertedUser), {
+  return Response.json(insertedUser);
+  /*return new Response(JSON.stringify(insertedUser), {
     status: 200,
     headers: {
       //'Access-Control-Allow-Credentials': "true",
@@ -18,8 +18,9 @@ export async function POST(req) {
       "Content-Type": "application/json"
     },
   });
+  */
   } catch {
-    return new Response(JSON.stringify({ error: 'Internal server error' }), {
+    /*return new Response(JSON.stringify({ error: 'Internal server error' }), {
       status: 400,
       headers: {
         //'Access-Control-Allow-Credentials': "true",
@@ -28,8 +29,8 @@ export async function POST(req) {
         'Access-Control-Allow-Headers': 'Content-Type',
         "Content-Type": "application/json"
       },
-    });
-    //return Response.json({ error: 'Internal server error' });
+    });*/
+    return Response.json({ error: 'Internal server error' });
   }
 }
 
