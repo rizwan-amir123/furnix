@@ -1,5 +1,7 @@
 "use client"
 import { useState } from 'react';
+import {loadStripe} from "@stripe/stripe-js";
+
 export default function Cart({src}) {
     
     const [formData, setFormData] = useState({
@@ -15,6 +17,32 @@ export default function Cart({src}) {
         payment: 'Cash on Delivery',
     });
     
+    const handleCheckout = async () => {
+        try {
+            const amount =140
+            const stripe = await loadStripe(process.env.NEXT_PUBLIC_TEST_STRIPE_PUBLISHABLE_KEY);
+
+            if (!stripe) throw new Error('Stripe failed to initialize.');
+
+            const checkoutResponse = await fetch('/api/checkout_sessions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({"amount": 140}),
+            });
+
+            const {sessionId} = await checkoutResponse.json();
+            const stripeError = await stripe.redirectToCheckout({sessionId});
+
+            if (stripeError) {
+                console.error(stripeError);
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
     const [sameAddressCheck, setSameAddressCheck] = useState(true);
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -164,6 +192,13 @@ export default function Cart({src}) {
                 </label>
             </div>
 
+            <div className="bg-amber-500 w-1/5 text-white font-semibold  
+                p-3 hover:bg-amber-600 text-center">
+                <button onClick={handleSubmit} type="submit" className="">
+                    Submit
+                </button>
+            </div>
+
            
 
 
@@ -204,7 +239,7 @@ export default function Cart({src}) {
             </div>
 
             <div className="bg-amber-500">
-                <button onClick={handleSubmit} type="submit" className="bg-amber-500 w-full text-white font-semibold  
+                <button onClick={handleCheckout} type="submit" className="bg-amber-500 w-full text-white font-semibold  
                 p-3 hover:bg-amber-600 ">
                     <a >Place Order</a>
                 </button>
