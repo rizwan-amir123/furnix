@@ -31,18 +31,19 @@ export async function POST(req) {
                   price_data: {
                     currency: "usd",
                     product_data: {
-                      name: "INV-" + date,
+                      name: "INV-",
                     },
-                    unit_amount: body?.amount * 100 || 100,
+                    //unit_amount: body?.amount * 100,
+                    unit_amount: 10 * 100,
                   },
                   quantity: 1,
                 },
               ],
             mode: "payment",
-            success_url: `${headersList.get("origin")}/thank-you`,
+            success_url: `${headersList.get("origin")}/`,
             cancel_url: `${headersList.get("origin")}/`,
         });
-
+        console.log()
         return Response.json({sessionId: session.id});
     } catch (err) {
         console.log(err)

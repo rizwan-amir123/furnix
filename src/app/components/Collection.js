@@ -13,7 +13,7 @@ export default function Collection({src}) {
             <div className="flex space-x-3 mx-10 my-10 pt-5">
             
             <div className="group relative w-1/4">
-                <img src="https://drive.google.com/uc?export=view&id=1Pb9P9yDnULkWpDgTfY5VmmDnA0UwqEQo" />
+                <img src="https://i.imgur.com/AHs0Y53.jpg" />
                 <div className="absolute bottom-0 left-0 right-0 top-0 h-full 
                 w-full overflow-hidden bg-amber-500 bg-fixed opacity-0 
                 transition duration-300 ease-in-out group-hover:opacity-50 
@@ -28,7 +28,7 @@ export default function Collection({src}) {
             </div>
 
             <div className="group relative w-1/4">
-                <img src="https://drive.google.com/uc?export=view&id=1LSfNHNlBDU9YITbvSnE4StFGZ-ZpSRwj" />
+                <img src="https://i.imgur.com/SoxVgID.jpg" />
                 <div className="absolute bottom-0 left-0 right-0 top-0 h-full 
                 w-full overflow-hidden bg-amber-500 bg-fixed opacity-0 
                 transition duration-300 ease-in-out group-hover:opacity-50 
@@ -41,7 +41,7 @@ export default function Collection({src}) {
             </div>
             
             <div className="group relative w-1/4">
-                <img src="https://drive.google.com/uc?export=view&id=1lFPdq5OenVIOzWWDgtTVeBGjJOMCaRve" />
+                <img src="https://i.imgur.com/cqYjDbV.jpg" />
                 <div className="absolute bottom-0 left-0 right-0 top-0 h-full 
                 w-full overflow-hidden bg-amber-500 bg-fixed opacity-0 
                 transition duration-300 ease-in-out group-hover:opacity-50 
@@ -55,7 +55,7 @@ export default function Collection({src}) {
             </div>
 
             <div className="group relative w-1/4">
-                <img src="https://drive.google.com/uc?export=view&id=1L685w6HBOv92P-pJW6HqcrncBrfRh4fh" />
+                <img src="https://i.imgur.com/wdvlh6k.jpg" />
                 <div className="absolute bottom-0 left-0 right-0 top-0 h-full 
                 w-full overflow-hidden bg-amber-500 bg-fixed opacity-0 
                 transition duration-300 ease-in-out group-hover:opacity-50 

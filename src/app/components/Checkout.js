@@ -31,8 +31,10 @@ export default function Cart({src}) {
                 },
                 body: JSON.stringify({"amount": 140}),
             });
-
+            console.log("checkoutResponse:", checkoutResponse)
+            console.log("hello")
             const {sessionId} = await checkoutResponse.json();
+            console.log("sessionId:", sessionId)
             const stripeError = await stripe.redirectToCheckout({sessionId});
 
             if (stripeError) {
