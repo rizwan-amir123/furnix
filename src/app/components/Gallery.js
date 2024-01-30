@@ -7,9 +7,9 @@ export default function Gallery({id}) {
         // Fetch users when the component mounts
         fetch(`/api/products/${id}`)
           .then((response) => response.json())
-          .then((data) => setProducts(data))
+          .then((data) => {setProducts(data); console.log(data);})
           .catch((error) => console.error('Error fetching products:', error));
-    }, [products]);
+    }, []);
     
     return (
     <section className="bg-stone-200 dark:bg-stone-200 pb-20">

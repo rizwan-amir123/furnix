@@ -31,7 +31,7 @@ export async function POST(req) {
                   price_data: {
                     currency: "usd",
                     product_data: {
-                      name: "INV-",
+                      name: "Total Cost",
                     },
                     //unit_amount: body?.amount * 100,
                     unit_amount: 10 * 100,

@@ -243,7 +243,7 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
     <div className="px-10">
         <article className="px-5">
             <div className="flex items-center mb-4">
-                <img className="w-10 h-10 me-4 rounded-full" src="https://drive.google.com/uc?export=view&id=1FQhvnOJEnWezsb1Sb8IjaWfUPeG_UE_v" alt=""/>
+                <img className="w-10 h-10 me-4 rounded-full" src="https://i.imgur.com/lmphuGF.png" alt=""/>
                 <div className="font-medium text-gray-900">
                     <p>Jesse Leos </p>
                 </div>
@@ -272,7 +272,7 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
 
         <article className="px-5 pt-5">
             <div className="flex items-center mb-4">
-                <img className="w-10 h-10 me-4 rounded-full" src="https://drive.google.com/uc?export=view&id=1FQhvnOJEnWezsb1Sb8IjaWfUPeG_UE_v" alt=""/>
+                <img className="w-10 h-10 me-4 rounded-full" src="https://i.imgur.com/lmphuGF.png" alt=""/>
                 <div className="font-medium text-gray-900">
                     <p>Jessica Leo </p>
                 </div>
@@ -295,7 +295,7 @@ export default function Display({src, params, addToCart, cartItems, removeFromCa
                 </svg>
                 <h3 className="pl-3 ms-2 text-sm font-semibold text-gray-900">Superb Quality</h3>
             </div>
-            <footer className="mb-5 text-sm text-gray-500 text-gray-400"><time datetime="2017-03-03 19:00">June 14, 2023</time></footer>
+            <footer className="mb-5 text-sm text-gray-500 text-gray-400"><time dateTime="2017-03-03 19:00">June 14, 2023</time></footer>
             <p className="mb-2 text-gray-500 text-gray-800">Super Impressed! Sure gonna buy again!</p>
         </article>
     </div>
