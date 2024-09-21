@@ -4,7 +4,7 @@ import Header from './components/Header.js'
 import Reviews from './components/Reviews.js'
 import Features from './components/Features.js'
 import Subscribe from './components/Subscribe.js'
-import Carousel from './components/Carousel.js'
+import CarouselImages from './components/CarouselImages.js'
 
 import Footer from './components/Footer.js'
 import Collection from './components/Collection.js'
@@ -38,7 +38,7 @@ export default function Home() {
       {/*<Mheader src={LogoImg} src1={AvatarImg} cartItems={cartItems}  
       addToCart={addToCart} addMultipleToCart={addMultipleToCart}/>*/}
       <Header src={LogoImg} src1={AvatarImg} cartItems={cartItems} addToCart={addToCart} addMultipleToCart={addMultipleToCart}/>
-      <Carousel src={[Car1Img, Car2Img, Car3Img, Car4Img, Car5Img]}/>
+      <CarouselImages src={[Car1Img, Car2Img, Car3Img, Car4Img, Car5Img]}/>
       <Hero src={[C1Img, C2Img, C3Img, C4Img, C5Img, RugImg]} />
       <Features />
       <Collection src={[IndoorImg, OutdoorImg, ClassicImg, ModernaImg]} />
